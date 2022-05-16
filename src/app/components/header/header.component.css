@@ -2,6 +2,11 @@
     background-color: aquamarine;
 }
 
+#login1{
+    float: right;
+    
+}
+
 app-redes {
     float: right;
     margin-top: 20px;
