@@ -10,6 +10,8 @@ import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     RedesComponent,
     LoginComponent,
     BannerComponent,
-    PerfilComponent
+    PerfilComponent,
+    ExperienciaComponent,
+    EstudiosComponent
   ],
   imports: [
     BrowserModule,
