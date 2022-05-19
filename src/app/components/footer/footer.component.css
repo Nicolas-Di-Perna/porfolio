@@ -1,0 +1,13 @@
+.row{
+    background-color: black;
+    
+}
+
+footer {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 5px -15px 5px blanchedalmond;
+}
