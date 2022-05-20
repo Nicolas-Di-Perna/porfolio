@@ -9,5 +9,5 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 5px -15px 5px blanchedalmond;
+    box-shadow: 5px -5px 5px blanchedalmond;
 }

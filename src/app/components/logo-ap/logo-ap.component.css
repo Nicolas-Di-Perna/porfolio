@@ -1,4 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #APlogo {
     width: 150px;
    
+}
+#RedesLogo{
+    width: 30px;
+}
+
+#RedesLogo{
+    margin: 2px;
+}
+
+#login{
+    margin: 10px;
 }
