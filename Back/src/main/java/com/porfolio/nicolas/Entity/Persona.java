@@ -23,7 +23,7 @@ public class Persona {
     private String apellido;
     
     
-    @Size(min = 1, max = 50, message = "Longuitud no valida.")
+    @Size(min = 1, max = 500, message = "Longuitud no valida.")
     private String img;
 
     public Long getId() {
