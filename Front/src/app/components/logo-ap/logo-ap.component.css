@@ -5,11 +5,11 @@
 }
 
 #APlogo {
-    width: 150px;
+    width: 120px;
    
 }
 #RedesLogo{
-    width: 30px;
+    width: 20px;
 }
 
 #RedesLogo{
@@ -17,5 +17,10 @@
 }
 
 #login{
-    margin: 10px;
+    margin: 3px;
+    align-items: left;
+}
+
+#logo-ap-barra {
+    box-shadow: rgba(50, 50, 93, 0.25) 50px 80px 100px 20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(232, 234, 236, 0.35) 10px -20px 16px 0px inset;
 }
