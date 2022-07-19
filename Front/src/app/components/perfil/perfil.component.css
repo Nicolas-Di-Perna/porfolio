@@ -1,10 +1,11 @@
 .row{
     padding: 20px;
 }
-div {
+/* div {
     background-color:gray;
     text-align: center;
-} 
+} */
+
 @media (min-width: 576px) {
     #fotoperfil{
         position: absolute;
