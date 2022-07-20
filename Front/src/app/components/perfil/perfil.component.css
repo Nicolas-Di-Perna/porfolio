@@ -1,50 +1,65 @@
-.row{
-    padding: 20px;
-}
-/* div {
-    background-color:gray;
-    text-align: center;
-} */
-/*
-@media (min-width: 576px) {
-    #fotoperfil{
-        position: absolute;
-        width: 15%;
-        border-radius: 100%;
-        left: 3%;
-        
-    }
-}
-
-@media (max-width: 575px) {
-    #fotoperfil{
-        position: absolute;
-        width: 25%;
-        border-radius: 10%;
-        left: 30%;
-        
-    }
-}*/
-#fotoperfil{
-    width: 150px;
-    height: 150px;
-}
-
-#name{
-    font-weight: bold;
-    margin-top: 30%;
-    font-size: 20px;
-}
-h1 {
-    padding-top:10%;
-}
-
-#cardperfil, #cardfoto, #cardmi, #cardnombre{
+.sobremi{
     background-color: transparent;
 }
-h2{
-    text-align: right;
+.row{
+    background-color: transparent;
 }
-#sobremi{
-    text-align:center;
-}
+
+.sobremi .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: transparent;
+    transition: 0.5s;
+  }
+  
+  .sobremi .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+  
+  .sobremi .member .pic img {
+    transition: ease-in-out 0.3s;
+  }
+  
+  .sobremi .member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sobremi .member .member-info {
+    padding-left: 30px;
+  }
+  
+  .sobremi .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+  }
+  
+  .sobremi .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .sobremi .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .sobremi .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  
