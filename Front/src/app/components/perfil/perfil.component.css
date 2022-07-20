@@ -5,7 +5,7 @@
     background-color: transparent;
 }
 
-.sobremi .member {
+.sobremi .persona {
     position: relative;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -14,32 +14,32 @@
     transition: 0.5s;
   }
   
-  .sobremi .member .pic {
+  .sobremi .persona .pic {
     overflow: hidden;
     width: 180px;
     border-radius: 50%;
   }
   
-  .sobremi .member .pic img {
+  .sobremi .persona .pic img {
     transition: ease-in-out 0.3s;
   }
   
-  .sobremi .member:hover {
+  .sobremi .persona:hover {
     transform: translateY(-10px);
   }
   
-  .sobremi .member .member-info {
+  .sobremi .persona .persona-info {
     padding-left: 30px;
   }
   
-  .sobremi .member h4 {
+  .sobremi .persona h4 {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 20px;
     color: #37517e;
   }
   
-  .sobremi .member span {
+  .sobremi .persona span {
     display: block;
     font-size: 15px;
     padding-bottom: 10px;
@@ -47,7 +47,7 @@
     font-weight: 500;
   }
   
-  .sobremi .member span::after {
+  .sobremi .persona span::after {
     content: "";
     position: absolute;
     display: block;
@@ -57,7 +57,7 @@
     bottom: 0;
     left: 0;
   }
-  .sobremi .member p {
+  .sobremi .persona p {
     display: block;
     font-size: 15px;
     padding-bottom: 10px;
@@ -65,7 +65,7 @@
     font-weight: 500;
   }
   
-  .sobremi .member p {
+  .sobremi .persona p {
     margin: 10px 0 0 0;
     font-size: 14px;
   }
