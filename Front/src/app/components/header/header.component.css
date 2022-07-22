@@ -24,7 +24,14 @@
 
   #login{
     max-width: 30px;
-    margin: 3px;
+    margin-right: 30px;
     cursor: pointer;
     
+}
+i {
+  font-size: 45px;
+}
+
+.loginbuton a:hover i {
+  color: #fff;
 }

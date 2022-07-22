@@ -1,4 +1,5 @@
 .sobremi{
+    margin-top: 20px;
     background-color: transparent;
 }
 .row{
@@ -18,6 +19,9 @@
     overflow: hidden;
     width: 180px;
     border-radius: 50%;
+    min-width: 125px;
+    min-height: 138px;
+    
   }
   
   .sobremi .persona .pic img {
@@ -70,3 +74,39 @@
     font-size: 14px;
   }
   
+  .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    text-decoration: none;
+  }
+  
+  .social a i {
+    color: #000307;
+    font-size: 26px;
+    margin: 0 2px;
+  }
+  
+  .social a:hover {
+    background: transparent;
+  }
+  
+  .social a:hover i {
+    color: #fff;
+  }
+  
+  .social a+a {
+    margin-left: 8px;
+  }
