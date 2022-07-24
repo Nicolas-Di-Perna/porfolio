@@ -1,17 +1,40 @@
-.row{
-    background-color: black;
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
     
-}
-
-footer {
-    color: white;
-    font-size: 20px;
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+  
+  .footer .social-links a {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 5px -5px 5px blanchedalmond;
-}
-.modalfooter {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .footer .social-links a:hover {
+    color: #fff;
+    border-color: #fff;
+
+  }
+  .modalfooter{
     color: black;
-    text-align: left;
-    }
+  }
+
+ 
