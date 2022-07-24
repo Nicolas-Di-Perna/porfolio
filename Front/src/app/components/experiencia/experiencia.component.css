@@ -1,18 +1,18 @@
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.experiencialaboral .experiencialaboral-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.experiencialaboral #experiencialaboral-flters {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-wrap {
+.experiencialaboral .experiencialaboral-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.experiencialaboral .experiencialaboral-wrap::before {
   content: "";
   background: rgba(33, 59, 82, 0.6);
   position: absolute;
@@ -32,11 +32,11 @@
   z-index: 2;
 }
 
-.portfolio .portfolio-wrap img {
+.experiencialaboral .experiencialaboral-wrap img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-links {
   opacity: 0;
   left: 0;
   right: 0;
@@ -47,7 +47,7 @@
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-links a {
   color: #fdc134;
   line-height: 0;
   text-align: center;
@@ -57,16 +57,16 @@
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a i {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-links a i {
   font-size: 32px;
   line-height: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-links a:hover {
   color: #fff;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-info {
   opacity: 0;
   position: absolute;
   bottom: -20px;
@@ -77,22 +77,22 @@
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.experiencialaboral .experiencialaboral-wrap .experiencialaboral-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.experiencialaboral .experiencialaboral-wrap:hover::before {
   left: 0;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.experiencialaboral .experiencialaboral-wrap:hover .experiencialaboral-links {
   opacity: 1;
   top: calc(50% - 18px);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.experiencialaboral .experiencialaboral-wrap:hover .experiencialaboral-info {
   opacity: 1;
   bottom: 0;
 }
