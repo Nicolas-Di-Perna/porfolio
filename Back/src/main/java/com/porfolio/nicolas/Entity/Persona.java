@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Persona {
+public class persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

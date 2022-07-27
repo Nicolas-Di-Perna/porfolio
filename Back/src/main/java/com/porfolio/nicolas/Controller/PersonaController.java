@@ -2,6 +2,7 @@
 package com.porfolio.nicolas.Controller;
 
 import com.porfolio.nicolas.Entity.Persona;
+import com.porfolio.nicolas.Entity.persona;
 import com.porfolio.nicolas.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +22,12 @@ public class PersonaController {
     @Autowired IPersonaService ipersonaService;
     
     @GetMapping("personas/traer")
-    public List<Persona> getPersona(){
+    public List<persona> getPersona(){
         return ipersonaService.getPersona();
     }
     
     @PostMapping("/personas/crear")
-    public String createPersona(@RequestBody Persona persona){
+    public String createPersona(@RequestBody persona persona){
         ipersonaService.savePersona(persona);
         return "Persona creada.";
     }
