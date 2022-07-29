@@ -8,7 +8,7 @@ import { persona } from 'src/model/persona.model';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
-  persona: persona = new persona("","","");
+  persona: persona = new persona("","","","","","","","","","","");
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
