@@ -1,9 +1,9 @@
 
-package com.porfoliondp.N.D.P.Service;
+package com.porfolio.ndp.Service;
 
-import com.porfoliondp.N.D.P.Entity.Persona;
-import com.porfoliondp.N.D.P.Interface.iPersonaService;
-import com.porfoliondp.N.D.P.Repository.iPersonaRepository;
+import com.porfolio.ndp.Entity.Persona;
+import com.porfolio.ndp.Interface.iPersonaService;
+import com.porfolio.ndp.Repository.iPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,3 +35,4 @@ public class impPersonaService implements iPersonaService{
     }
       
 }
+

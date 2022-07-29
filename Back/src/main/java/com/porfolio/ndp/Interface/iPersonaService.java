@@ -1,13 +1,14 @@
 
-package com.porfoliondp.N.D.P.Interface;
 
-import com.porfoliondp.N.D.P.Entity.Persona;
+package com.porfolio.ndp.Interface;
+
+import com.porfolio.ndp.Entity.Persona;
 import java.util.List;
 
 
 public interface iPersonaService {
-    //traer lista persona//
-    public List <Persona> getPersona();
+     //traer lista persona//
+    public List<Persona> getPersona();
     
     //guardar un objeto de tipo persona//
     public void savePersona(Persona persona);
