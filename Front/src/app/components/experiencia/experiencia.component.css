@@ -1,3 +1,10 @@
+.experiencialaboral-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .experiencialaboral .experiencialaboral-item {
   margin-bottom: 30px;
 }

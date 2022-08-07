@@ -19,21 +19,37 @@
                 </div>
                 <div class="modal-body">
                     <p>Ingrese sus datos.</p>
-                        <form>
-                            <div class="mb-3">
-                                <label for="userlogin" class="col-form-label">User:
-                                </label>
-                                    <input type="text" class="form-control" id="userlogin">
-                            </div>
-                            <div class="mb-3">
-                                <label for="passwordlogin" class="col-form-label">Password:
-                                </label>
-                            <input type="text" class="form-control" id="passwordlogin">
-                            </div>
-                        </form>
+
+                    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                        <div class="form-outline form-white mb-4">
+                          <input
+                            type="user"
+                            id="nombreUsuario"
+                            name="nombreUsuario"
+                            class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required
+                          />
+                          <label class="form-label" for="nombreUsuario">Usuario</label>
+                        </div>
+        
+                        <div class="form-outline form-white mb-4">
+                          <input
+                            type="password"
+                            id="password"
+                            class="form-control form-control-lg" [(ngModel)]="password" name="password" required
+                            />
+                          
+                          <label class="form-label" for="password"
+                            >Contraseña</label
+                          >
+                        </div>
+                       <button class="btn btn-outline-light btn-lg px-5" type="submit">
+                          INGRESO
+                        </button>
+          </form>
+
                 </div>
             <div class="modal-footer">
-                <a href="/login"> <i class='bx bx-user-check'></i> </a>
+                <a href=""> <i class='bx bx-user-check'></i> </a>
             </div>
         </div>
     </div>

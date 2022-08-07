@@ -1,4 +1,8 @@
-
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .estudios .estudios-title {
     font-size: 26px;
     font-weight: 700;

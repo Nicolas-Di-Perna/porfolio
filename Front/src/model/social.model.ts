@@ -1,11 +1,11 @@
 export class social{
     id?: Number;
-    nombre: String;
-    icono: String;
-    link: String;
-    idpersona: String;
+    nombre: string;
+    icono: string;
+    link: string;
+    idpersona: string;
 
-    constructor(nombre: String,icono: String,link: String,idpersona: String){
+    constructor(nombre: string,icono: string,link: string,idpersona: string){
         this.nombre = nombre;
         this.icono =icono;
         this.link= link;

@@ -1,19 +1,19 @@
 export class persona{
     id?: Number;
-    nombre: String;
-    apellido: String;
-    domicilio: String;
-    fechaNac: String;
-    edad: String;
-    correo: String;
-    telefono: String;
-    usuario: String;
-    password: String;
-    img: String;
-    sobreMi: String;
+    nombre: string;
+    apellido: string;
+    domicilio: string;
+    fechaNac: string;
+    edad: string;
+    correo: string;
+    telefono: string;
+    usuario: string;
+    password: string;
+    img: string;
+    sobreMi: string;
 
 
-constructor(nombre: String,apellido: String,domicilio: String,fechaNac: String,edad: String,correo: String,telefono: String,usuario: String,password: String,img: String,sobreMi: String){
+constructor(nombre: string,apellido: string,domicilio: string,fechaNac: string,edad: string,correo: string,telefono: string,usuario: string,password: string,img: string,sobreMi: string){
     this.nombre = nombre;
     this.apellido =apellido;
     this.domicilio= domicilio;
