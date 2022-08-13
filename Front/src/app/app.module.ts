@@ -20,6 +20,7 @@ import { ContactarmeComponent } from './components/contactarme/contactarme.compo
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { EditexpeComponent } from './components/experiencia/modal/editexpe/editexpe.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     ContactarmeComponent,
     HomeComponent,
+    EditexpeComponent,
   ],
   imports: [
     BrowserModule,

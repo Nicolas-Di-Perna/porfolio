@@ -1,148 +1,97 @@
-<section id="experiencialaboral" class="experiencialaboral section-bg">
-    <div class="container">
-        <div class="section-title">
-             <h2 data-aos="fade-in">Experiencia </h2>
-        </div>
-            <div class="row experiencialaboral-container" data-aos="fade-up">
-              <div class="col-lg-4 col-md-8 experiencialaboral-item">
-                <div class="experiencialaboral-wrap">
-                  <img src="../../../assets/cru.jpg" class="img-fluid" alt="">
-                  <div class="experiencialaboral-links">
-                      <div class="Expbuton" id="Exp" data-bs-toggle="modal" data-bs-target="#Expmodal">
-                          <a><i class='bx bx-log-in'></i></a></div>
-                  </div>
-                  <div class="experiencialaboral-info">
-                    <h4>Crucianelli S.A</h4>
-                  </div>
-                </div>
-              </div>  
+<section id="expe" class="experiencia">
+  <div class="container">
 
-              <div class="col-lg-4 col-md-8 experiencialaboral-item ">
-              <div class="experiencialaboral-wrap">
-                <img src="../../../assets/banner.jpg" class="img-fluid" alt="">
-                <div class="experiencialaboral-links">
-                    <div class="Expbuton" id="Exp" data-bs-toggle="modal" data-bs-target="#Expmodal1">
-                        <a><i class='bx bx-log-in'></i></a></div>
-                </div>
-                <div class="experiencialaboral-info">
-                  <h4>DiperTeam</h4>
-                </div>
-              </div>
-              </div>
-
-              <div class="col-lg-4 col-md-8 experiencialaboral-item ">
-                <div class="experiencialaboral-wrap">
-                  <img src="../../../assets/seprogramar.jpg" class="img-fluid" alt="">
-                  <div class="experiencialaboral-links">
-                      <div class="Expbuton" id="Exp" data-bs-toggle="modal" data-bs-target="#Expmodal2">
-                          <a><i class='bx bx-log-in'></i></a></div>
-                  </div>
-                  <div class="experiencialaboral-info">
-                    <h4>#SeProgramar</h4>
-                  </div>
-                </div>
-                </div>
-
-            </div>
+    <div class="titulo">
+      <h2>Experiencia</h2>
+      <div class="addexp" id="exp" data-bs-toggle="modal" data-bs-target="#addexp" *ngIf="isLogged">
+        <a><i class='bx bx-plus-circle'></i></a>
+      </div>
     </div>
-    
-  </section>
 
-  <!-- Modal -->
-<div class="modal fade" id="Expmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" *ngFor="let Experiencia of expe">
+        <div class="card" >          
+          <img src="{{Experiencia.img}}" class="imgexp" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{Experiencia.nombreE}}</h4>
+              <p class="card-text">{{Experiencia.descripcionE}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{Experiencia.fechaInicio}} - {{Experiencia.fechaFin}}</li>
+              <li class="list-group-item">{{Experiencia.puestoE}}</li> 
+              <div class="editdelete" >   
+                <div class="dexp" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+                <div class="eexp" id="editexp" routerLink="/editexp/{{Experiencia.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
+              </div>         
+            </ul>          
+        </div>
+      </div>        
+    </div>
+  </div>
+</section>
+<!-- editar experiencia-->
+
+<!-- agregar experiencia-->
+<div>
+<div>
+  <div class="modal" id="addexp" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Crucianelli S.A</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title">Agregar una nueva experiencia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
         </div>
         <div class="modal-body">
-         
-            <div class="container" data-aos="fade-up">   
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3 class="exp-title">Resumen</h3>
-                            <div class="exp-item">
-                                <h4>Supply chain</h4>
-                                <h5>2018 - 2022</h5>
-                                <p>Supervisor de planificacion de compras a proveedores y activacion. Estoy a cargo de un equipo de trabajo donde aseguramos el suministro de materias primas.</p>
-                            </div>
-                            <div class="exp-item">
-                                <h4>Area procesos</h4>
-                                <h5>2016 - 2018</h5>
-                                <p>Junto a un equipo de trabajo desarrollamos mejoras en los procesos industriales para mantener la eficiencia, reducir costes, mejorar la sostenibilidad y maximizar el margen de beneficios.</p>
-                            </div>
-                            <div class="exp-item">
-                                <h4>Area logistica</h4>
-                                <h5>2011 - 2015</h5>
-                                <p>Mis responsabilidades fueron gestionar el ingreso de materias primas, como tambien diseñar en conjunto a procesos, el sistema de abastecimiento interno, para cubrir con el plan de produccion.</p>
-                            </div>
-                            <div class="exp-item">
-                                <h4>Operario armador</h4>
-                                <h5>2010 - 2010</h5>
-                                <p>Durande este periodo me dedique a conocer la estructura, componentes y prestaciones de cada implemento.</p>
-                            </div>
-                    </div>
-                </div>
+          <p>Por favor ingrese sus datos.</p>
+          <form #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+
+            <div class="form-outline form-white mb-4">Nombre Empresa
+              <label class="form-label" for="nombreE"></label>
+              <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg"
+                [(ngModel)]="nombreE" required />              
             </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Expmodal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">DiperTeam</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         
-            <div class="container" data-aos="fade-up">   
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3 class="exp-title">Resumen</h3>
-                            <div class="exp-item">
-                                <h4>Front end</h4>
-                                <h5>2021 - 2022</h5>
-                                <p>Diseño y creacion de paginas web.</p>
-                            </div>
-                            
-                    </div>
-                </div>
+            <div class="form-outline form-white mb-4">Descripcion
+              <label class="form-label" for="descripcionE"></label>
+              <input type="text" id="descripcionE" name="descripcionE" class="form-control form-control-lg"
+                [(ngModel)]="descripcionE" required />              
             </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="Expmodal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">#SeProgramar</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         
-            <div class="container" data-aos="fade-up">   
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3 class="exp-title">Resumen</h3>
-                            <div class="exp-item">
-                                <h4>Front end</h4>
-                                <h5>2021 - 2021</h5>
-                                <p>Diseño y creacion de paginas web.</p>
-                            </div>
-                            
-                    </div>
-                </div>
+            <div class="form-outline form-white mb-4">Fecha inicio
+              <label class="form-label" for="fechaInicio"></label>
+              <input type="text" id="fechaInicio" name="fechaInicio" class="form-control form-control-lg"
+                [(ngModel)]="fechaInicio" required />
             </div>
 
+            <div class="form-outline form-white mb-4">Fecha fin
+              <label class="form-label" for="puestoE"></label>
+              <input type="text" id="fechaFin" name="fechaFin" class="form-control form-control-lg"
+                [(ngModel)]="fechaFin" required />              
+            </div>
+
+            <div class="form-outline form-white mb-4">Puesto
+              <label class="form-label" for="fechaFin"></label>
+              <input type="text" id="puestoE" name="puestoE" class="form-control form-control-lg"
+                [(ngModel)]="puestoE" required />             
+            </div>            
+
+            <div class="form-outline form-white mb-4">Link imagen
+              <label class="form-label" for="img"></label>
+              <input type="text" id="img" name="img" class="form-control form-control-lg"
+                [(ngModel)]="img" required />
+            </div>
+            
+            <div class="d-grid gap-2 col-6 mx-auto">
+               <button type="submit" class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </form>
+          
         </div>
-      </div>
-    </div>
   </div>
+</div>
+</div>
+
+<!-- editar experiencia-->
+

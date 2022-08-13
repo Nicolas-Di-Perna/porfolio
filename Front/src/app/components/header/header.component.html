@@ -1,57 +1,45 @@
 <header id="header" class="fixed-top">
-    <div class="container-12 d-flex align-items-center">
-        <a href="https://argentinaprograma.inti.gob.ar/" class="logo me-auto"><img src="../../../assets/APLogo-20-20.png" alt="" class="img-fluid"></a>
-           
-                <div class="loginbuton" id="login" data-bs-toggle="modal" data-bs-target="#loginmodal">
-                    <a><i class='bx bx-log-in'></i></a></div>           
-            
-             
+  <div class="container-12 d-flex align-items-center">
+    <a href="https://argentinaprograma.inti.gob.ar/" class="logo me-auto"><img src="../../../assets/APLogo-20-20.png"
+        alt="" class="img-fluid"></a>
+
+    <div class="loginbuton" id="login" data-bs-toggle="modal" data-bs-target="#loginmodal">
+      <a><i class='bx bx-log-in-circle'></i></a>
+      <!--icono parra salida <i class='bx bx-log-out-circle'></i>-->
     </div>
+
+
+  </div>
 </header>
 <div>
-    <div class="modal" id="loginmodal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">   
-                        </button>
-                </div>
-                <div class="modal-body">
-                    <p>Ingrese sus datos.</p>
-
-                    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-                        <div class="form-outline form-white mb-4">
-                          <input
-                            type="user"
-                            id="nombreUsuario"
-                            name="nombreUsuario"
-                            class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required
-                          />
-                          <label class="form-label" for="nombreUsuario">Usuario</label>
-                        </div>
-        
-                        <div class="form-outline form-white mb-4">
-                          <input
-                            type="password"
-                            id="password"
-                            class="form-control form-control-lg" [(ngModel)]="password" name="password" required
-                            />
-                          
-                          <label class="form-label" for="password"
-                            >Contraseña</label
-                          >
-                        </div>
-                       <button class="btn btn-outline-light btn-lg px-5" type="submit">
-                          INGRESO
-                        </button>
-          </form>
-
-                </div>
-            <div class="modal-footer">
-                <a href=""> <i class='bx bx-user-check'></i> </a>
-            </div>
+  <div class="modal" id="loginmodal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
         </div>
-    </div>
+        <div class="modal-body">
+          <p>Por favor ingrese sus datos.</p>
+
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <div class="form-outline form-white mb-4">Usuario
+              <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+              <label class="form-label" for="nombreUsuario"></label>
+            </div>
+
+            <div class="form-outline form-white mb-4">Contraseña
+              <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password"
+                name="password" required />
+
+              <label class="form-label" for="password"></label>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+             <button type="submit" class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </form>   
+        </div>
+  </div>
 </div>
-</div> 
