@@ -20,10 +20,12 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">{{Experiencia.fechaInicio}} - {{Experiencia.fechaFin}}</li>
               <li class="list-group-item">{{Experiencia.puestoE}}</li> 
+              <li class="list-group-item"> 
               <div class="editdelete" >   
                 <div class="dexp" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
                 <div class="eexp" id="editexp" routerLink="/editexp/{{Experiencia.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
-              </div>         
+              </div>      
+            </li>
             </ul>          
         </div>
       </div>        

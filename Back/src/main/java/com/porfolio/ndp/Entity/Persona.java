@@ -38,7 +38,7 @@ public class Persona implements Serializable {
     
     @NotNull
     @Size(min = 1, max = 50, message = "Longuitud no valida.")
-    private String edad;
+    private String titulo;
     
     @NotNull
     @Size(min = 1, max = 50, message = "Longuitud no valida.")

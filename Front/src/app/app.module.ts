@@ -21,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EditexpeComponent } from './components/experiencia/modal/editexpe/editexpe.component';
+import { EditestudioComponent } from './components/estudios/modal/editestudio/editestudio.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { EditexpeComponent } from './components/experiencia/modal/editexpe/edite
     ContactarmeComponent,
     HomeComponent,
     EditexpeComponent,
+    EditestudioComponent,
   ],
   imports: [
     BrowserModule,

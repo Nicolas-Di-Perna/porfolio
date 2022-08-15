@@ -44,7 +44,7 @@ public class PersonaController {
                                 @RequestParam("apellido") String nuevoApellido,
                                 @RequestParam("domicilio") String nuevoDomicilio,
                                 @RequestParam("fechaNac") String nuevofechaNac,
-                                @RequestParam("edad") String nuevoedad,
+                                @RequestParam("titulo") String nuevotitulo,
                                 @RequestParam("correo") String nuevoCorreo,
                                 @RequestParam("telefono") String nuevotelefono,
                                 @RequestParam("usuario") String nuevoUsuario,
@@ -58,7 +58,7 @@ public class PersonaController {
         persona.setApellido(nuevoApellido);
         persona.setDomicilio(nuevoDomicilio);
         persona.setFechaNac(nuevofechaNac);
-        persona.setEdad(nuevoedad);
+        persona.setTitulo(nuevotitulo);
         persona.setCorreo(nuevoCorreo);
         persona.setTelefono(nuevotelefono);
         persona.setUsuario(nuevoUsuario);

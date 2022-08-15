@@ -53,3 +53,34 @@
     background: #fff;
     border: 2px solid #0563bb;
   }
+  .editdelete i{ 
+    float:right;
+    font-size: 32px;
+    cursor: pointer;
+ }
+ .editdelete .bx {
+ 
+     padding: 5px;
+     color: rgb(0, 0, 0);
+     transition: ease-in-out 0.3s;
+     display: flex;
+    ;
+ }
+ .editdelete div:hover i {
+   color: rgb(248, 6, 6);
+ }
+
+ #estudio{
+  margin-bottom: 15px;
+}
+
+.addestu a:hover i {
+  color: #fff;
+}
+
+.addestu{
+ 
+   font-size: 32px;
+  margin-right: 30px;
+  cursor: pointer;
+}
