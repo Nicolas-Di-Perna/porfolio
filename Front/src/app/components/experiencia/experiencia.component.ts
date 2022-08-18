@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
 import { Experiencia } from 'src/model/experiencia';
@@ -22,7 +22,7 @@ export class ExperienciaComponent implements OnInit {
   puestoE: string = '';
   img: string = '';
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
+  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService, private router: Router) { }
 
     isLogged = false;
 
@@ -45,8 +45,10 @@ export class ExperienciaComponent implements OnInit {
       this.sExperiencia.save(expe).subscribe(
         data =>{
           alert("Experiencia agregada");
+          this.router.navigate(['']);
         },err =>{
           alert("Error");
+          this.router.navigate(['']);
         }
       )
         } 
@@ -58,6 +60,7 @@ export class ExperienciaComponent implements OnInit {
                 this.cargarExperiencia();
               }, err => {
                 alert("Error");
+                this.router.navigate(['']);
               }
             )
           }      

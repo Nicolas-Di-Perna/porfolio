@@ -3,63 +3,154 @@
   align-items: center;
   justify-content: center;
 }
+.progress-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px;
+}
+.progress-outer{
+  background: #fff;
+  padding: 5px 60px 5px 5px;
+  border: 5px solid #bebfbf;
+  border-radius: 45px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.progress{
+  background: #bebfbf;
+  border-radius: 20px;
+  margin: 0;
+}
+.progress .progress-bar{
+  border-radius: 20px;
+  box-shadow: none;
+  animation: animate-positive 2s;
+}
+.progress .progress-value{
+  font-size: 20px;
+  font-weight: 700;
+  color: #6b7880;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+}
+@keyframes animate-positive{
+  0%{ width: 0; }
+}
+#skill {
+  margin-bottom: 15px;
+}
+
+.addskill a:hover i {
+  color: #fff;
+}
+
+.addskill {
+  font-size: 32px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.editdelete i {
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+}
+.editdelete .bx {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  transition: ease-in-out 0.3s;
+  display: flex;
+}
+.editdelete div:hover i {
+  color: rgb(248, 6, 6);
+}
+
+p {
+  font-size: 32px;
+}
+
+
+/* .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skills .content h3 {
-    font-weight: 700;
-    font-size: 32px;
-    color: #37517e;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .skills .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skills .content ul li {
-    padding-bottom: 10px;
-  }
-  
-  .skills .content ul i {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #47b2e4;
-  }
-  
-  .skills .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .skills .progress {
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
-  }
-  
-  .skills .progress .skill {
-    padding: 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #37517e;
-  }
-  
-  .skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-  }
-  
-  .skills .progress-bar-wrap {
-    background: #e8edf5;
-    height: 10px;
-  }
-  
-  .skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #2763bd;
-  }
-  
+  font-weight: 700;
+  font-size: 32px;
+  color: #37517e;
+  font-family: "Poppins", sans-serif;
+}
+
+.skills .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills .content ul li {
+  padding-bottom: 10px;
+}
+
+.skills .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #47b2e4;
+}
+
+.skills .content p:last-child {
+  margin-bottom: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #37517e;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #e8edf5;
+  height: 25px;
+}
+
+#skill {
+  margin-bottom: 15px;
+}
+
+.addskill a:hover i {
+  color: #fff;
+}
+
+.addskill {
+  font-size: 32px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.editdelete i {
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+}
+.editdelete .bx {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  transition: ease-in-out 0.3s;
+  display: flex;
+}
+.editdelete div:hover i {
+  color: rgb(248, 6, 6);
+}
+
+p {
+  font-size: 32px;
+}
+*/

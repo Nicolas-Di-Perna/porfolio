@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SEstudioService } from 'src/app/service/s-estudio.service';
 import { TokenService } from 'src/app/service/token.service';
 import { Estudio } from 'src/model/estudio';
@@ -20,7 +21,7 @@ export class EstudiosComponent implements OnInit {
   img: string = '';
 
 
-  constructor(private sEstudio: SEstudioService, private tokenService: TokenService) { }
+  constructor(private sEstudio: SEstudioService, private tokenService: TokenService, private router: Router) { }
 
   isLogged = false;
 
@@ -43,8 +44,10 @@ export class EstudiosComponent implements OnInit {
       this.sEstudio.save(expe).subscribe(
         data =>{
           alert("Estudio agregado");
+          this.router.navigate(['']);
         },err =>{
           alert("Error");
+          this.router.navigate(['']);
         }
       )
         } 
@@ -56,6 +59,7 @@ export class EstudiosComponent implements OnInit {
                 this.cargarEstudio();
               }, err => {
                 alert("Error");
+                this.router.navigate(['']);
               }
             )
           }      

@@ -22,6 +22,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EditexpeComponent } from './components/experiencia/modal/editexpe/editexpe.component';
 import { EditestudioComponent } from './components/estudios/modal/editestudio/editestudio.component';
+import { EditskillComponent } from './components/skills/modal/editskill/editskill.component';
+import { EditproyectoComponent } from './components/proyectos/modal/editproyecto/editproyecto.component';
+import { SwiperproyectoComponent } from './components/proyectos/swiper/swiperproyecto/swiperproyecto.component';
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { EditestudioComponent } from './components/estudios/modal/editestudio/ed
     HomeComponent,
     EditexpeComponent,
     EditestudioComponent,
+    EditskillComponent,
+    EditproyectoComponent,
+    SwiperproyectoComponent,
   ],
   imports: [
     BrowserModule,

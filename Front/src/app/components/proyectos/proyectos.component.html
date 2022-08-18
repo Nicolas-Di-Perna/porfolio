@@ -1,61 +1,88 @@
- <section id="proyectos" class="proyectos">
+
+
+<section id="proyectos" class="proyectos">
     <div class="container">
 
       <div class="section-title">
-        <h2>Proyectos</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>Proyectos</h2>    
+        <div class="addproyec" id="proyec" data-bs-toggle="modal" data-bs-target="#addproyec" *ngIf="isLogged">
+          <a><i class='bx bx-plus-circle'></i></a>
+        </div>    
       </div>
  
-      <div class="row">
+      <div class="row" *ngFor="let Proyecto of proyec">
+
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturiVoluptatum deleniti atque corrupti quos dolores et quas molestias excepturiVoluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <h4><a href="">{{Proyecto.nombre}}</a></h4>
+            <p>{{Proyecto.fecha}}</p>
+            <p>{{Proyecto.link}}</p>
+            <p>{{Proyecto.img}}</p>
+            <div class="editdelete" >   
+            <div class="dproyecto" (click)="delete(Proyecto.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+            <div class="eexp" id="editexp" routerLink="/editproyecto/{{Proyecto.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure</p>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
+          
+        </div>      
 
       </div>
 
     </div>
-  </section><!-- End Services Section -->
+  </section> -->
+
+  <!-- agregar un proyecto-->
+<div>
+  <div>
+    <div class="modal" id="addproyec" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Agregar un nuevo proyecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Por favor ingrese sus datos.</p>
+            <form #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+  
+              <div class="form-outline form-white mb-4">Nombre
+                <label class="form-label" for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" class="form-control form-control-lg"
+                  [(ngModel)]="nombre" required />              
+              </div>
+  
+              <div class="form-outline form-white mb-4">Descripcion
+                <label class="form-label" for="descripcion"></label>
+                <input type="text" id="descripcion" name="descripcion" class="form-control form-control-lg"
+                  [(ngModel)]="descripcion" required />              
+              </div>
+  
+              <div class="form-outline form-white mb-4">Fecha del proyecto
+                <label class="form-label" for="fecha"></label>
+                <input type="text" id="fecha" name="fecha" class="form-control form-control-lg"
+                  [(ngModel)]="fecha" required />
+              </div>
+                  
+              <div class="form-outline form-white mb-4">Link del proyecto
+                <label class="form-label" for="link"></label>
+                <input type="text" id="link" name="link" class="form-control form-control-lg"
+                  [(ngModel)]="link" required />             
+              </div>            
+  
+              <div class="form-outline form-white mb-4">Link imagen
+                <label class="form-label" for="img"></label>
+                <input type="text" id="img" name="img" class="form-control form-control-lg"
+                  [(ngModel)]="img" required />
+              </div>
+              
+              <div class="d-grid gap-2 col-6 mx-auto">
+                 <button type="submit" class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Aceptar</button>
+              </div>
+            </form>
+            
+          </div>
+    </div>
+  </div>
+  </div>
