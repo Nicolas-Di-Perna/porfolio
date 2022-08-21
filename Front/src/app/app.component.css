@@ -1,6 +1,6 @@
 body {
-     /*   background-color: rgba(47, 101, 216, 0.705); */
-     background-color: rgba(78, 78, 104, 0.705);
+     background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(12,112,230,1) 100%);
 }
 
 

@@ -1,38 +1,37 @@
+package com.porfolio.ndp.Dto;
 
-package com.porfolio.ndp.Entity;
+import javax.validation.constraints.NotBlank;
 
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class DtoPersona {
 
-
-
-
-@Entity
-public class Persona implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String nombre;  
+    @NotBlank
+    private String nombre;
+    @NotBlank
     private String apellido;
+    @NotBlank
     private String domicilio;
-    private String fechaNac;      
-    private String titulo;    
-    private String correo;   
-    private String telefono;   
-    private String usuario;    
-    private String password;  
-    private String img;   
+    @NotBlank
+    private String fechaNac;
+    @NotBlank
+    private String titulo;
+    @NotBlank
+    private String correo;
+    @NotBlank
+    private String telefono;
+    @NotBlank
+    private String usuario;
+    @NotBlank
+    private String password;
+    @NotBlank
+    private String img;
+    @NotBlank
     private String sobreMi;
-    
-     //constructor
+ //constructores
 
-    public Persona() {
+    public DtoPersona() {
     }
 
-    public Persona(String nombre, String apellido, String domicilio, String fechaNac, String titulo, String correo, String telefono, String usuario, String password, String img, String sobreMi) {
+    public DtoPersona(String nombre, String apellido, String domicilio, String fechaNac, String titulo, String correo, String telefono, String usuario, String password, String img, String sobreMi) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.domicilio = domicilio;
@@ -45,15 +44,7 @@ public class Persona implements Serializable {
         this.img = img;
         this.sobreMi = sobreMi;
     }
-     //Getter Setter.
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    // Getters Setters
 
     public String getNombre() {
         return nombre;

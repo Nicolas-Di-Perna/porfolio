@@ -1,47 +1,53 @@
-
-<div class="container" *ngIf="expLab">
-  <div class="row">
-      <div>
-          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-            <div class="form-outline form-white mb-4">Nombre Empresa
-              <label class="form-label" for="nombreE"></label>
-              <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg"
-                [(ngModel)]="expLab.nombreE" required />              
-            </div>
-        
-            <div class="form-outline form-white mb-4">Descripcion
-              <label class="form-label" for="descripcionE"></label>
-              <input type="text" id="descripcionE" name="descripcionE" class="form-control form-control-lg"
-                [(ngModel)]="expLab.descripcionE" required />              
-            </div>
-        
-            <div class="form-outline form-white mb-4">Fecha inicio
-              <label class="form-label" for="fechaInicio"></label>
-              <input type="text" id="fechaInicio" name="fechaInicio" class="form-control form-control-lg"
-                [(ngModel)]="expLab.fechaInicio" required />
-            </div>
-        
-            <div class="form-outline form-white mb-4">Fecha fin
-              <label class="form-label" for="puestoE"></label>
-              <input type="text" id="fechaFin" name="fechaFin" class="form-control form-control-lg"
-                [(ngModel)]="expLab.fechaFin" required />              
-            </div>
-        
-            <div class="form-outline form-white mb-4">Puesto
-              <label class="form-label" for="fechaFin"></label>
-              <input type="text" id="puestoE" name="puestoE" class="form-control form-control-lg"
-                [(ngModel)]="expLab.puestoE" required />             
-            </div>            
-        
-            <div class="form-outline form-white mb-4">Link imagen
-              <label class="form-label" for="img"></label>
-              <input type="text" id="img" name="img" class="form-control form-control-lg"
-                [(ngModel)]="expLab.img" required />
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button type="submit" class="btn btn-success">Aceptar</button>
-           </div>
-          </form>
+<body>
+  <div class="registration-form">
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+      <h4 class="title">EDITAR EXPERIENCIA</h4>
+      <div class="form-outline form-white mb-4">Nombre Empresa
+        <label class="form-label" for="nombreE"></label>
+        <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg"
+          [(ngModel)]="expLab.nombreE" required />              
       </div>
+  
+      <div class="form-outline form-white mb-4">Descripcion
+        <label class="form-label" for="descripcionE"></label>
+        <input type="text" id="descripcionE" name="descripcionE" class="form-control form-control-lg"
+          [(ngModel)]="expLab.descripcionE" required />              
+      </div>
+  
+      <div class="form-outline form-white mb-4">Fecha inicio
+        <label class="form-label" for="fechaInicio"></label>
+        <input type="text" id="fechaInicio" name="fechaInicio" class="form-control form-control-lg"
+          [(ngModel)]="expLab.fechaInicio" required />
+      </div>
+  
+      <div class="form-outline form-white mb-4">Fecha fin
+        <label class="form-label" for="puestoE"></label>
+        <input type="text" id="fechaFin" name="fechaFin" class="form-control form-control-lg"
+          [(ngModel)]="expLab.fechaFin" required />              
+      </div>
+  
+      <div class="form-outline form-white mb-4">Puesto
+        <label class="form-label" for="fechaFin"></label>
+        <input type="text" id="puestoE" name="puestoE" class="form-control form-control-lg"
+          [(ngModel)]="expLab.puestoE" required />             
+      </div>            
+  
+      <div class="form-outline form-white mb-4">Link imagen
+        <label class="form-label" for="img"></label>
+        <input type="text" id="img" name="img" class="form-control form-control-lg"
+          [(ngModel)]="expLab.img" required />
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-success">Aceptar</button>
+
+        <button type="submit" routerLink="/home/" class="btn btn-success">
+          Cancelar
+        </button>
+        </div>  
+    </form>
+
+
+
   </div>
-</div>
+</body>

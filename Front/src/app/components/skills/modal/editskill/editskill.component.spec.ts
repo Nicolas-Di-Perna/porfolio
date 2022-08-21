@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwiperproyectoComponent } from './swiperproyecto.component';
+import { EditskillComponent } from './editskill.component';
 
-describe('SwiperproyectoComponent', () => {
-  let component: SwiperproyectoComponent;
-  let fixture: ComponentFixture<SwiperproyectoComponent>;
+describe('EditskillComponent', () => {
+  let component: EditskillComponent;
+  let fixture: ComponentFixture<EditskillComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SwiperproyectoComponent ]
+      declarations: [ EditskillComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SwiperproyectoComponent);
+    fixture = TestBed.createComponent(EditskillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

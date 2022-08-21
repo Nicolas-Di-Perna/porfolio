@@ -1,31 +1,35 @@
+<body>
+  <div class="registration-form" *ngIf="skill">
 
-<div class="container" *ngIf="skill">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-              <div class="form-outline form-white mb-4">Nombre 
-                <label class="form-label" for="nombre"></label>
-                <input type="text" id="nombre" name="nombre" class="form-control form-control-lg"
-                  [(ngModel)]="skill.nombre" required />              
-              </div>
-          
-              <div class="form-outline form-white mb-4">Porcentaje
-                <label class="form-label" for="porcentaje"></label>
-                <input type="text" id="porcentaje" name="porcentaje" class="form-control form-control-lg"
-                  [(ngModel)]="skill.porcentaje" required />              
-              </div>
-          
-              <div class="form-outline form-white mb-4">Icono
-                <label class="form-label" for="icono"></label>
-                <input type="text" id="icono" name="icono" class="form-control form-control-lg"
-                  [(ngModel)]="skill.icono" required />
-              </div>
-          
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="submit" class="btn btn-success">Aceptar</button>
-             </div>
-            </form>
-        </div>
-    </div>
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+      <h4 class="title">EDITAR SKILL</h4>
+
+      <div class="form-outline form-white mb-4">Nombre
+        <label class="form-label" for="nombre"></label>
+        <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" [(ngModel)]="skill.nombre"
+          required />
+      </div>
+
+      <div class="form-outline form-white mb-4">Porcentaje
+        <label class="form-label" for="porcentaje"></label>
+        <input type="text" id="porcentaje" name="porcentaje" class="form-control form-control-lg"
+          [(ngModel)]="skill.porcentaje" required />
+      </div>
+
+      <div class="form-outline form-white mb-4">Icono
+        <label class="form-label" for="icono"></label>
+        <input type="text" id="icono" name="icono" class="form-control form-control-lg" [(ngModel)]="skill.icono"
+          required />
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-success">Aceptar</button>
+
+        <button type="submit" routerLink="/home/" class="btn btn-success">
+          Cancelar
+        </button>
+      </div>
+
+    </form>
   </div>
-  
+</body>

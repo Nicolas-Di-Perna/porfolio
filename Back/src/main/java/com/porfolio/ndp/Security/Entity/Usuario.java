@@ -43,6 +43,10 @@ public class Usuario {
         this.email = email;
         this.password = password;
     }
+
+    public Usuario(String nombre, String apellido, String fechaNac, String dni, String correo, String telefono, String domicilio, String titulo, String sobreMi, String img) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     //Getter Setter
 

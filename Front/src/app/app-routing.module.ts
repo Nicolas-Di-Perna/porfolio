@@ -5,8 +5,9 @@ import { EditexpeComponent } from './components/experiencia/modal/editexpe/edite
 
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditperfilComponent } from './components/perfil/modal/editperfil/editperfil.component';
 import { EditproyectoComponent } from './components/proyectos/modal/editproyecto/editproyecto.component';
-import { SwiperproyectoComponent } from './components/proyectos/swiper/swiperproyecto/swiperproyecto.component';
+
 import { EditskillComponent } from './components/skills/modal/editskill/editskill.component';
 
 const routes: Routes = [
@@ -17,8 +18,7 @@ const routes: Routes = [
   {path:'editestudio/:id', component: EditestudioComponent},
   {path:'editskill/:id', component: EditskillComponent},
   {path:'editproyecto/:id', component: EditproyectoComponent},
-  {path:'swiperproyecto', component: SwiperproyectoComponent}
-  
+  {path:'editperfil/:id', component: EditperfilComponent }  
 ];
 
 @NgModule({

@@ -24,7 +24,8 @@ import { EditexpeComponent } from './components/experiencia/modal/editexpe/edite
 import { EditestudioComponent } from './components/estudios/modal/editestudio/editestudio.component';
 import { EditskillComponent } from './components/skills/modal/editskill/editskill.component';
 import { EditproyectoComponent } from './components/proyectos/modal/editproyecto/editproyecto.component';
-import { SwiperproyectoComponent } from './components/proyectos/swiper/swiperproyecto/swiperproyecto.component';
+import { EditperfilComponent } from './components/perfil/modal/editperfil/editperfil.component';
+
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { SwiperproyectoComponent } from './components/proyectos/swiper/swiperpro
     EditestudioComponent,
     EditskillComponent,
     EditproyectoComponent,
-    SwiperproyectoComponent,
+    EditperfilComponent,
+  
   ],
   imports: [
     BrowserModule,

@@ -1,38 +1,41 @@
 
+<section id="proyec" class="proyecto">
+  <div class="container">
 
-<section id="proyectos" class="proyectos">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Proyectos</h2>    
-        <div class="addproyec" id="proyec" data-bs-toggle="modal" data-bs-target="#addproyec" *ngIf="isLogged">
-          <a><i class='bx bx-plus-circle'></i></a>
-        </div>    
+    <div class="titulo">
+      <h2>Proyectos</h2>
+      <div class="addproyec" id="proyectos" data-bs-toggle="modal" data-bs-target="#addproyec" *ngIf="isLogged">
+        <a><i class='bx bx-plus-circle'></i></a>
       </div>
- 
-      <div class="row" *ngFor="let Proyecto of proyec">
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">{{Proyecto.nombre}}</a></h4>
-            <p>{{Proyecto.fecha}}</p>
-            <p>{{Proyecto.link}}</p>
-            <p>{{Proyecto.img}}</p>
-            <div class="editdelete" >   
-            <div class="dproyecto" (click)="delete(Proyecto.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
-            <div class="eexp" id="editexp" routerLink="/editproyecto/{{Proyecto.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
-          </div>
-          </div>
-          
-        </div>      
-
-      </div>
-
     </div>
-  </section> -->
 
-  <!-- agregar un proyecto-->
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" *ngFor="let Proyecto of proyec">
+        <div class="card" >          
+          <img src="{{Proyecto.img}}" class="imgproyec" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{Proyecto.nombre}}</h4>
+              <p class="card-text">{{Proyecto.descripcion}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{Proyecto.fecha}}</li>
+              <li class="list-group-item">{{Proyecto.link}}</li> 
+              <li class="list-group-item"> 
+              <div class="editdelete" >   
+                <div class="dexp" (click)="delete(Proyecto.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+                <div class="eexp" id="editproyecto" routerLink="/editproyecto/{{Proyecto.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
+                                
+              </div>      
+            </li>
+            </ul>          
+        </div>
+      </div>        
+    </div>
+  </div>
+</section>
+
+<!-- agregar proyecto-->
 <div>
   <div>
     <div class="modal" id="addproyec" tabindex="-1">
@@ -47,7 +50,7 @@
             <p>Por favor ingrese sus datos.</p>
             <form #f="ngForm" (ngSubmit)="onCreate()" novalidate>
   
-              <div class="form-outline form-white mb-4">Nombre
+              <div class="form-outline form-white mb-4">Nombre Proyecto
                 <label class="form-label" for="nombre"></label>
                 <input type="text" id="nombre" name="nombre" class="form-control form-control-lg"
                   [(ngModel)]="nombre" required />              
@@ -59,17 +62,17 @@
                   [(ngModel)]="descripcion" required />              
               </div>
   
-              <div class="form-outline form-white mb-4">Fecha del proyecto
+              <div class="form-outline form-white mb-4">Fecha 
                 <label class="form-label" for="fecha"></label>
                 <input type="text" id="fecha" name="fecha" class="form-control form-control-lg"
                   [(ngModel)]="fecha" required />
               </div>
-                  
-              <div class="form-outline form-white mb-4">Link del proyecto
+  
+              <div class="form-outline form-white mb-4">Link
                 <label class="form-label" for="link"></label>
                 <input type="text" id="link" name="link" class="form-control form-control-lg"
-                  [(ngModel)]="link" required />             
-              </div>            
+                  [(ngModel)]="link" required />              
+              </div>
   
               <div class="form-outline form-white mb-4">Link imagen
                 <label class="form-label" for="img"></label>

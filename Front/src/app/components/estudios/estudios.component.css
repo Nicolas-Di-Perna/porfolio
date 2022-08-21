@@ -11,6 +11,26 @@
     color: #45505b;
   }
   
+  .pic {
+    overflow: hidden;
+    float:right;
+    width: 120px;
+    border-radius: 15px;
+    min-width: 75px;
+    min-height: 75px;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+
+  .pic:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+  }
+  
+
+
+
+
   .estudios .estudios-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;

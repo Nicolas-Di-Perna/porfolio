@@ -1,0 +1,59 @@
+<div>
+    <div>
+      <div class="modal" id="eexp" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Editar una experiencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Por favor ingrese sus sdfdsfsddatos.</p>
+              <form #f="ngForm" (ngSubmit)="onEdit()" novalidate>
+  
+                <div class="form-outline form-white mb-4">Nombre Empresa
+                  <label class="form-label" for="nombreE"></label>
+                  <input type="text" id="nombreE" name="nombreE" class="form-control form-control-lg"
+                    [(ngModel)]="nombreE" required />              
+                </div>
+  
+                <div class="form-outline form-white mb-4">Descripcion
+                  <label class="form-label" for="descripcionE"></label>
+                  <input type="text" id="descripcionE" name="descripcionE" class="form-control form-control-lg"
+                    [(ngModel)]="descripcionE" required />              
+                </div>
+  
+                <div class="form-outline form-white mb-4">Fecha inicio
+                  <label class="form-label" for="fechaInicio"></label>
+                  <input type="text" id="fechaInicio" name="fechaInicio" class="form-control form-control-lg"
+                    [(ngModel)]="fechaInicio" required />
+                </div>
+  
+                <div class="form-outline form-white mb-4">Fecha fin
+                  <label class="form-label" for="puestoE"></label>
+                  <input type="text" id="fechaFin" name="fechaFin" class="form-control form-control-lg"
+                    [(ngModel)]="fechaFin" required />              
+                </div>
+  
+                <div class="form-outline form-white mb-4">Puesto
+                  <label class="form-label" for="fechaFin"></label>
+                  <input type="text" id="puestoE" name="puestoE" class="form-control form-control-lg"
+                    [(ngModel)]="puestoE" required />             
+                </div>            
+  
+                <div class="form-outline form-white mb-4">Link imagen
+                  <label class="form-label" for="img"></label>
+                  <input type="text" id="img" name="img" class="form-control form-control-lg"
+                    [(ngModel)]="img" required />
+                </div>
+                
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button type="submit" class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </form>
+              
+            </div>
+      </div>
+    </div>
+  </div>

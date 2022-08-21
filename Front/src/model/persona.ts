@@ -1,4 +1,4 @@
-export class persona{
+export class Persona{
     id?: Number;
     nombre: string;
     apellido: string;
@@ -11,7 +11,7 @@ export class persona{
     password: string;
     img: string;
     sobreMi: string;
-
+ 
 
 constructor(nombre: string,apellido: string,domicilio: string,fechaNac: string,titulo: string,correo: string,telefono: string,usuario: string,password: string,img: string,sobreMi: string){
     this.nombre = nombre;

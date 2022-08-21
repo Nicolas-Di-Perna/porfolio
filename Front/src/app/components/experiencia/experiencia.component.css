@@ -102,3 +102,6 @@
 .editdelete div:hover i {
   color: rgb(248, 6, 6);
 }
+.list-group-item{
+  border-radius: 15px;
+}

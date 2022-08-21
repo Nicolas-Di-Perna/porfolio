@@ -10,14 +10,17 @@
 
                     <div class="estudios-item" *ngFor="let Estudio of estu">
                       <div class="editdelete" >   
-                        <div class="destudio" (click)="delete(Estudio.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
-                        <div class="eestudio" id="editestudio" routerLink="/editestudio/{{Estudio.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
-                      </div>
+                      <div class="destudio" (click)="delete(Estudio.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+                      <div class="eestudio" id="editestudio" routerLink="/editestudio/{{Estudio.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div> 
+                      <div class="pic">
+                          <img src="{{Estudio.img}}" class="img-fluid" alt="" />
+                      </div>          
+                    </div>
                         <h4>{{Estudio.instituto}}</h4>
                         <h5>{{Estudio.fechaInicio}} - {{Estudio.fechaFin}}</h5>
                         <p>{{Estudio.nombre}}</p>
                         <p>{{Estudio.titulo}}</p>
-                    
+                       
                      
                   </div>
             </div>
