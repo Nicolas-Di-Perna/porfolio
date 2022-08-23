@@ -3,6 +3,7 @@
     background-color: transparent;
 }
 .row{
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,42 +78,6 @@
     font-size: 14px;
   }
   
-  .social {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .social a {
-    transition: ease-in-out 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    width: 32px;
-    height: 32px;
-    background: transparent;
-    text-decoration: none;
-  }
-  
-  .social a i {
-    color: #000307;
-    font-size: 26px;
-    margin: 0 2px;
-  }
-  
-  .social a:hover {
-    background: transparent;
-  }
-  
-  .social a:hover i {
-    color: #fff;
-  }
-  
-  .social a+a {
-    margin-left: 8px;
-  }
   .editdelete i{ 
     float:right;
     font-size: 32px;
@@ -129,3 +94,19 @@
  .editdelete div:hover i {
    color: rgb(248, 6, 6);
  }
+
+ ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #F6E3CA;
+  float: left;
+}
+h2{ 
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}

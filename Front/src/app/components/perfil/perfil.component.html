@@ -27,28 +27,34 @@
                     <p>{{Persona.fechaNac}}</p>
                     <p>{{Persona.domicilio}}</p>
                    
-                    <div class="social"> 
+
+                  <!--  <app-redes></app-redes>
+                      <div class="social"> 
                        
                         <a href=""><i class='bx bxl-instagram'></i></a>
                         <a href=""><i class='bx bxl-github'></i></a>
                         <a href=""><i class='bx bxl-linkedin-square'></i></a> 
-                     <!--    <li >
+                       <li >
                             <div class="social">
                             <a href="{{social.link}}"><i class='{{social.nombre}}'></i></a>
                             </div>  
-                        </li> -->
+                        </li> 
                     </div>
-
+                    <div class="addsocial" id="social" data-bs-toggle="modal" data-bs-target="#addsocial" *ngIf="isLogged">
+                      <a><i class='bx bx-plus-circle'></i></a>
+                    </div>-->
                 </div>
                 </div>
             </div>
+            
             <div class="col-lg-6" *ngFor="let Persona of perso">
                 <h2>Acerca de mi...</h2>
-                <p> {{Persona.sobreMi}}
-                 
-                </p>
+                <p> {{Persona.sobreMi}}</p>
+              
+             <app-redes></app-redes>
             </div>
             </div>
+            
        </div>
     </section>
 
@@ -74,54 +80,54 @@
                   <input type="text" id="nombre" name="nombre" class="form-control form-control-lg"
                     [(ngModel)]="nombre" required />              
                 </div>
-                <div class="form-outline form-white mb-4">apellido 
+                <div class="form-outline form-white mb-4">Apellido 
                     <label class="form-label" for="apellido"></label>
                     <input type="text" id="apellido" name="apellido" class="form-control form-control-lg"
                       [(ngModel)]="apellido" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">domicilio 
+                  <div class="form-outline form-white mb-4">Domicilio 
                     <label class="form-label" for="domicilio"></label>
                     <input type="text" id="domicilio" name="domicilio" class="form-control form-control-lg"
                       [(ngModel)]="domicilio" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">fechaNac 
+                  <div class="form-outline form-white mb-4">Fecha Nacimiento 
                     <label class="form-label" for="fechaNac"></label>
                     <input type="text" id="fechaNac" name="fechaNac" class="form-control form-control-lg"
                       [(ngModel)]="fechaNac" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">titulo 
+                  <div class="form-outline form-white mb-4">Titulo personal
                     <label class="form-label" for="titulo"></label>
                     <input type="text" id="titulo" name="titulo" class="form-control form-control-lg"
                       [(ngModel)]="titulo" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">correo 
+                  <div class="form-outline form-white mb-4">Correo 
                     <label class="form-label" for="correo"></label>
                     <input type="text" id="correo" name="correo" class="form-control form-control-lg"
                       [(ngModel)]="correo" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">telefono 
+                  <div class="form-outline form-white mb-4">Telefono 
                     <label class="form-label" for="telefono"></label>
                     <input type="text" id="telefono" name="telefono" class="form-control form-control-lg"
                       [(ngModel)]="telefono" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">usuario 
+                  <div class="form-outline form-white mb-4">Usuario 
                     <label class="form-label" for="usuario"></label>
                     <input type="text" id="usuario" name="usuario" class="form-control form-control-lg"
                       [(ngModel)]="usuario" required />              
                   </div>
                   
-                  <div class="form-outline form-white mb-4">password 
+                  <div class="form-outline form-white mb-4">Password 
                     <label class="form-label" for="password"></label>
                     <input type="text" id="password" name="password" class="form-control form-control-lg"
                       [(ngModel)]="password" required />              
                   </div>
 
-                  <div class="form-outline form-white mb-4">img 
+                  <div class="form-outline form-white mb-4">Img 
                     <label class="form-label" for="img"></label>
                     <input type="text" id="img" name="img" class="form-control form-control-lg"
                       [(ngModel)]="img" required />              
                   </div>
-                  <div class="form-outline form-white mb-4">sobreMi 
+                  <div class="form-outline form-white mb-4">SobreMi 
                     <label class="form-label" for="sobreMi"></label>
                     <input type="text" id="sobreMi" name="sobreMi" class="form-control form-control-lg"
                       [(ngModel)]="sobreMi" required />              
@@ -136,3 +142,4 @@
       </div>
     </div>
     </div>
+

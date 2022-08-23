@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SPersonaService } from 'src/app/service/s-persona';
+import { SSocialService } from 'src/app/service/social.service';
 import { TokenService } from 'src/app/service/token.service';
 import { Persona } from 'src/model/persona';
+import { Social } from 'src/model/social.model';
 
 
 
@@ -27,7 +29,11 @@ export class PerfilComponent implements OnInit {
   img: string = '';
   sobreMi: string = '';
 
-  constructor(public sPersona: SPersonaService, private tokenService: TokenService, private router: Router) { }
+
+
+
+
+  constructor(public sPersona: SPersonaService,public sSocial: SSocialService, private tokenService: TokenService, private router: Router) { }
 
   isLogged = false;
 
@@ -74,5 +80,6 @@ export class PerfilComponent implements OnInit {
 
   }
 
+ 
 
 }

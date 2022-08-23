@@ -25,6 +25,8 @@ import { EditestudioComponent } from './components/estudios/modal/editestudio/ed
 import { EditskillComponent } from './components/skills/modal/editskill/editskill.component';
 import { EditproyectoComponent } from './components/proyectos/modal/editproyecto/editproyecto.component';
 import { EditperfilComponent } from './components/perfil/modal/editperfil/editperfil.component';
+import { EditbannerComponent } from './components/banner/modal/editbanner/editbanner.component';
+import { EditredesComponent } from './components/redes/modal/editredes/editredes.component';
 
 
 
@@ -49,6 +51,8 @@ import { EditperfilComponent } from './components/perfil/modal/editperfil/editpe
     EditskillComponent,
     EditproyectoComponent,
     EditperfilComponent,
+    EditbannerComponent,
+    EditredesComponent,
   
   ],
   imports: [

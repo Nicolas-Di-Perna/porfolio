@@ -1,11 +1,101 @@
+
 <div class="row">
-    <div class="container">
-    <div> 
-            <a href=""> <img src="../../../assets/fb_icon-icons.com_65434.png" id="RedesLogo"> </a>
-            <a href=""> <img src="../../../assets/github_logo_icon_143772.png" id="RedesLogo"> </a>
-            <a href=""> <img src="../../../assets/instagram_f_icon-icons.com_65485.png" id="RedesLogo"> </a>
-            <a href=""> <img src="../../../assets/whatsapp.png" id="RedesLogo"> </a>
-            <a href=""> <img src="../../../assets/youtube.png" id="RedesLogo"> </a>
-        </div>
+  <div class="col-lg-12 footer-links">
+    <div class="addred" id="social" data-bs-toggle="modal" data-bs-target="#addsocial" *ngIf="isLogged">
+      <a><i class='bx bx-plus-circle'></i></a>
     </div>
-</div>  
+
+    
+    <ul class="col-lg-6 social-links ">
+      <nav *ngFor="let Social of red">
+      <li><a href="{{Social.link}}"><i class='{{Social.icono}}'></i></a>
+      <div class="editdelete" >               
+        <div class="dexp" (click)="delete(Social.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+        <div class="eskill" id="editskill" routerLink="/editredes/{{Social.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
+      </div>
+    </li>
+      </nav>  
+      </ul> 
+      </div>
+      </div>
+      
+
+<!--<div class="row">
+<div class="col-lg-3 col-md-6 footer-links">
+  
+  <div class="addsocial" id="social" data-bs-toggle="modal" data-bs-target="#addsocial" *ngIf="isLogged">
+    <a><i class='bx bx-plus-circle'></i></a>
+  </div>
+  <ul class="social-links mt-3">
+    <nav *ngFor="let Social of red">
+      <li><a href="{{Social.link}}"><i class='{{Social.icono}}'></i></a></li> 
+      <div class="editdelete" >               
+        <div class="dexp" (click)="delete(Social.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+        <div class="eskill" id="editskill" routerLink="/editsocial/{{Social.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
+      </div>
+    </nav>
+  </ul>
+</div>
+</div>-->
+
+
+
+
+<!--<div class="row">
+    <div class="addsocial" id="social" data-bs-toggle="modal" data-bs-target="#addsocial" *ngIf="isLogged">
+            <a><i class='bx bx-plus-circle'></i></a>
+          </div>
+<div class="row col-lg-6 d-flex" id="redes">
+    <div class="social" *ngFor="let Social of red"> 
+         <nav>              
+        <a href="{{Social.link}}"><i class='{{Social.icono}}'></i></a>
+        
+        <div class="editdelete" >               
+            <div class="dexp" (click)="delete(Social.id)" *ngIf="isLogged"><i class='bx bxs-message-square-x'></i></div>       
+            <div class="eskill" id="editskill" routerLink="/editsocial/{{Social.id}}"*ngIf="isLogged"><i class='bx bxs-message-square-edit'></i></div>           
+          </div>
+        </nav> 
+    </div>
+  </div>  -->
+           <!-- agregar social-->
+<div>
+  <div>
+    <div class="modal" id="addsocial" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">AGREGAR UNA NUEVA RED SOCIAL</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Por favor ingrese sus datos.</p>
+            <form #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+  
+              <div class="form-outline form-white mb-4">Nombre 
+                <label class="form-label" for="nombre"></label>
+                <input type="text" id="nombreE" name="nombre" class="form-control form-control-lg"
+                  [(ngModel)]="nombreS" required />              
+              </div>
+      
+              <div class="form-outline form-white mb-4">Icono
+                <label class="form-label" for="icono"></label>
+                <input type="text" id="icono" name="icono" class="form-control form-control-lg"
+                  [(ngModel)]="icono" required />             
+              </div>            
+  
+              <div class="form-outline form-white mb-4">Link 
+                <label class="form-label" for="link"></label>
+                <input type="text" id="link" name="link" class="form-control form-control-lg"
+                  [(ngModel)]="link" required />
+              </div>
+              
+              <div class="d-grid gap-2 col-6 mx-auto">
+                 <button type="submit" class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Aceptar</button>
+              </div>
+            </form>
+            
+          </div>
+    </div>
+  </div>
+  </div>

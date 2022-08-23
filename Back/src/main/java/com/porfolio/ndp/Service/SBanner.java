@@ -15,7 +15,7 @@ public class SBanner {
     @Autowired
     RBanner rBanner;
     
-      public List<Banner> list (){
+    public List<Banner> list (){
         return rBanner.findAll();
     }
     
@@ -23,8 +23,8 @@ public class SBanner {
         return rBanner.findById(id);
     }
     
-    public Optional<Banner> getByBanner(String img) {
-        return rBanner.findByImg(img);
+    public Optional<Banner> getByNombre(String nombre) {
+        return rBanner.findByNombre(nombre);
     }
     
     public void save (Banner banner) {
@@ -39,8 +39,8 @@ public class SBanner {
          return rBanner.existsById(id);
      }
     
-    public boolean existByImg(String img) {
-        return rBanner.existsByImg(img);
+    public boolean existByNombre(String nombre) {
+        return rBanner.existsByNombre(nombre);
     }
 
     public boolean existById(int id) {
@@ -48,4 +48,4 @@ public class SBanner {
     }
 }
 
-
+  

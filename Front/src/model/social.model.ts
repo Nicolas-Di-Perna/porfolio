@@ -1,14 +1,14 @@
-export class social{
-    id?: Number;
-    nombre: string;
+export class Social{
+    id?: number;
+    nombreS: string;
     icono: string;
     link: string;
-    idpersona: string;
+   
 
-    constructor(nombre: string,icono: string,link: string,idpersona: string){
-        this.nombre = nombre;
+    constructor(nombreS: string,icono: string,link: string){
+        this.nombreS = nombreS;
         this.icono =icono;
         this.link= link;
-        this.idpersona = idpersona;
+    
     }
 }

@@ -12,15 +12,17 @@ public class Banner {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String img;
-    
+    private String nombre;
      //constructor
-
+    
     public Banner() {
     }
-
-    public Banner(String img) {
+    
+    public Banner(String img, String nombre) {
         this.img = img;
+        this.nombre = nombre;
     }
+
     //Getter Setter
 
     public int getId() {
@@ -38,5 +40,16 @@ public class Banner {
     public void setImg(String img) {
         this.img = img;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+  
+
     
 }

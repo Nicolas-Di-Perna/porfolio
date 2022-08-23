@@ -2,14 +2,17 @@
   <div class="container-12 d-flex align-items-center">
     <a href="https://argentinaprograma.inti.gob.ar/" class="logo me-auto"><img src="../../../assets/APLogo-20-20.png"
         alt="" class="img-fluid"></a>
-
-    <div class="loginbuton" id="login" data-bs-toggle="modal" data-bs-target="#loginmodal">
+        <div><p>#YoProgramo</p></div>
+    <div class="loginbuton" id="login" data-bs-toggle="modal" data-bs-target="#loginmodal" *ngIf="!isLogged">
       <a><i class='bx bx-log-in-circle'></i></a>
+     </div>
+    <div class="loginbuton" id="login" (click)="onLogOut()" *ngIf="isLogged">
+        <a><i class='bx bx-log-out-circle'></i></a>
       <!--icono parra salida <i class='bx bx-log-out-circle'></i>-->
     </div>
-
-
   </div>
+
+ 
 </header>
 <div>
   <div class="modal" id="loginmodal" tabindex="-1">

@@ -3,6 +3,13 @@
   align-items: center;
   justify-content: center;
 }
+H3{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
 .progress-title{
   font-size: 18px;
   font-weight: 700;

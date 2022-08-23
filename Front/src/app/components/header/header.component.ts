@@ -27,7 +27,10 @@ export class HeaderComponent implements OnInit {
       this.roles = this.tokenService.getAuthorities();
     }
   }
-
+  onLogOut(): void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
   onLogin(): void {
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(data => {
