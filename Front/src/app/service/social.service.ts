@@ -8,7 +8,8 @@ import { Social } from 'src/model/social.model';
   providedIn: 'root'
 })
 export class SSocialService {
-  socialURL = 'http://localhost:8080/social/'
+  //socialURL = 'http://localhost:8080/social/'
+  socialURL = 'https://backporfolioap.herokuapp.com/social/'
 
   constructor(private httpClient: HttpClient) { }
   public lista(): Observable<Social[]> {

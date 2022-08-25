@@ -7,7 +7,9 @@ import { Experiencia } from 'src/model/experiencia';
   providedIn: 'root'
 })
 export class SexperienciaService {
-  expURL = 'http://localhost:8080/explab/'
+  //expURL = 'http://localhost:8080/explab/'
+  expURL = 'https://backporfolioap.herokuapp.com/explab/'
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]> {

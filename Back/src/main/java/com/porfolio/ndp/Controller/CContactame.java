@@ -23,7 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
 @RequestMapping("/contactame")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontporfoliondap.web.app")
 public class CContactame {
   @Autowired
   SContactame sContactame;  
