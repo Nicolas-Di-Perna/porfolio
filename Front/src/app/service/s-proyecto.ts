@@ -9,8 +9,8 @@ import { Proyecto } from 'src/model/proyecto';
   })
 
   export class SProyectoService {
-   // proyecURL = 'http://localhost:8080/proyecto/'
-    proyecURL = 'https://backporfolioap.herokuapp.com/proyecto/'
+
+    proyecURL = 'https://backporfolioap.herokuapp.com/proyecto/';
     constructor(private httpClient: HttpClient) { }
     public lista(): Observable<Proyecto[]> {
       return this.httpClient.get<Proyecto[]>(this.proyecURL + 'lista');

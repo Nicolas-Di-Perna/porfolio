@@ -9,8 +9,8 @@ import { Contactame } from 'src/model/contactame';
     providedIn: 'root'
   })
   export class SContactameService {
-    //contacURL = 'http://localhost:8080/contactame/'
-    contacURL = 'https://backporfolioap.herokuapp.com/contactame/'
+
+    contacURL = 'https://backporfolioap.herokuapp.com/contactame/';
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<Contactame[]> {

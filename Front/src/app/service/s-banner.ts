@@ -8,8 +8,8 @@ import { Banner } from 'src/model/banner';
     providedIn: 'root'
   })
   export class SBannerService {
-    //bannerURL = 'http://localhost:8080/banner/'
-    bannerURL = 'https://backporfolioap.herokuapp.com/banner/'
+   
+    bannerURL = 'https://backporfolioap.herokuapp.com/banner/';
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<Banner[]> {
