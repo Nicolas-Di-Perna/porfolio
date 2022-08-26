@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "https://frontporfoliondap.web.app")
 
 
+
 public class CBanner {
   @Autowired
   SBanner sBanner;  
