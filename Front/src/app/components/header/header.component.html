@@ -27,6 +27,10 @@
           <p>Por favor ingrese sus datos.</p>
 
           <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+         <!--   <div class="pic">
+              <img src="../../../assets/giphy.gif" class="img-fluid" alt="" />
+          </div>
+        -->
             <div class="form-outline form-white mb-4">Usuario
               <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
                 [(ngModel)]="nombreUsuario" name="nombreUsuario" required />

@@ -27,6 +27,7 @@ import { EditproyectoComponent } from './components/proyectos/modal/editproyecto
 import { EditperfilComponent } from './components/perfil/modal/editperfil/editperfil.component';
 import { EditbannerComponent } from './components/banner/modal/editbanner/editbanner.component';
 import { EditredesComponent } from './components/redes/modal/editredes/editredes.component';
+import { ConsultasComponent } from './components/contactarme/consultas/consultas.component';
 
 
 
@@ -53,6 +54,7 @@ import { EditredesComponent } from './components/redes/modal/editredes/editredes
     EditperfilComponent,
     EditbannerComponent,
     EditredesComponent,
+    ConsultasComponent,
   
   ],
   imports: [

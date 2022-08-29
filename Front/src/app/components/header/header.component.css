@@ -32,6 +32,7 @@ p{
   text-align: left;
   color: #fff;
   font-size: 35px;
+  text-decoration: none;
 }
 i {
   font-size: 45px;
@@ -40,4 +41,13 @@ i {
 .loginbuton a:hover i {
   color: #fff;
 }
-
+/*
+.pic{
+display:block;
+margin:auto;
+overflow: hidden;
+width: 180px;
+border-radius: 50%;
+min-width: 125px;
+min-height: 138px;
+}*/

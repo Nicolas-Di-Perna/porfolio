@@ -1,0 +1,5 @@
+
+.modal-body {
+    max-width: 900px;
+    overflow-x: auto;
+}

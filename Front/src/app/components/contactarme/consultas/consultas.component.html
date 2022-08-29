@@ -1,0 +1,38 @@
+<button type="button" class="btn btn-outline-info" id="consultas" data-bs-toggle="modal" data-bs-target="#consultasmodal"  *ngIf="isLogged" >Ver consultas</button>
+
+                      <div>
+                        <div class="modal" id="consultasmodal" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title col-lg-12 pt-6 pt-lg-0 ">Consultas realizadas</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="scoll-tree">
+                                    <h5>Datos agendados.</h5>
+                                   <table class="table table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Telefono</th>
+                                        <th scope="col">Correo</th>
+                                        <th scope="col">Mensaje</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let Contactame of mensa">
+                                        <td>{{Contactame.nombre}}</td>
+                                        <td>{{Contactame.telefono}}</td>
+                                        <td>{{Contactame.correo}}</td>
+                                        <td>{{Contactame.mensaje}}</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div> 
